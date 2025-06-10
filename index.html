@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Só Confia</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="logo-wrapper">
+        <img id="logo-top" src="https://forcajovemuniversal.com/wp-content/uploads/2021/02/patch_universitarios-1536x864.png" alt="Logo FJU">
+    </div>
+    
+    <h1>Só Confia</h1>
+    <div class="maze-container">
+        <canvas id="maze"></canvas>
+        
+        <div class="maze-btn-group">
+            <button id="btn-restart" class="maze-btn">Novo Labirinto</button>
+            <button id="btn-reset" class="maze-btn">Reiniciar Jogo</button>
+            <button id="faithBtn" class="maze-btn">Fé (F)</button>
+            <button id="btn-help" class="maze-btn">Help</button>
+        </div>
+
+        <div id="passos-fe" class="passos-fe"></div>
+
+        <div id="controls-mobile">
+            <div class="mobile-controls-row">
+                <button id="upBtn">▲</button>
+            </div>
+            <div class="mobile-controls-row">
+                <button id="leftBtn">◀</button>
+                <button id="downBtn">▼</button>
+                <button id="rightBtn">▶</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="help-popup" class="help-popup" style="display:none;">
+        <div class="help-content">
+            <span class="help-close" id="help-close">&times;</span>
+            <h2>Como Jogar</h2>
+            <p>
+                O objetivo do jogo é conduzir o personagem pelo labirinto até o destino final (quadrado verde), usando as setas do teclado para se mover.<br><br>
+                Se ficar perdido, pressione a tecla <b>F</b> ou o botão <b>Fé</b> para ativar a "fé" e revelar o caminho correto até o destino.<br>
+                Ao seguir o caminho de fé, você verá quantos passos de fé já realizou.<br><br>
+                Você pode gerar um novo labirinto a qualquer momento clicando no botão <b>Novo Labirinto</b>.
+            </p>
+        </div>
+    </div>
+
+    <div id="victory-popup" style="display:none;">
+        <div class="victory-content">
+            <span class="victory-close" id="victory-close">&times;</span>
+            <p>Você venceu! Fé que salva. ✨</p>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
